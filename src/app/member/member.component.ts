@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GLOBAL } from '../app-config';
 
 @Component({
   selector: 'app-member',
@@ -7,7 +8,16 @@ import { Component } from '@angular/core';
 })
 export class MemberComponent {
 
-  nom='glid2';
+
+
+
+  dataSource: any[] =GLOBAL._DB.members ;
+    
   
+
+
+  
+  displayedColumns: string[] = ['1','2','3','4','5','6','7'] ;
+
 
 }
